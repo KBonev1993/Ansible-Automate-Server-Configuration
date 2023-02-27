@@ -12,12 +12,12 @@ backup_dir = "/var/backup"
 # Create the inventory file
 inventory = """
 [webservers]
-web1 ansible_host=192.168.1.10
-web2 ansible_host=192.168.1.11
+web1 ansible_host= 123.456.789.111
+web2 ansible_host= 123.456.789.111
 
 [databases]
-db1 ansible_host=192.168.1.12
-db2 ansible_host=192.168.1.13
+db1 ansible_host= 123.456.789.111
+db2 ansible_host= 123.456.789.111
 """
 
 with open(inventory_file, "w") as f:
